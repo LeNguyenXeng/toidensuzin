@@ -1,32 +1,37 @@
-import { motion } from 'motion/react';
-import { Shield, Heart, Sparkles, Activity } from 'lucide-react';
+import { motion } from "motion/react";
+import { Shield, Heart, Sparkles, Activity } from "lucide-react";
 
 const benefits = [
   {
     icon: Shield,
-    title: 'Tăng Miễn Dịch',
-    description: 'Củng cố hệ miễn dịch tự nhiên, giúp cơ thể chống lại bệnh tật hiệu quả',
+    title: "Tăng Miễn Dịch",
+    description:
+      "Củng cố hệ miễn dịch tự nhiên, giúp cơ thể chống lại bệnh tật hiệu quả",
   },
   {
     icon: Heart,
-    title: 'Hỗ Trợ Tim Mạch',
-    description: 'Cải thiện tuần hoàn máu, giảm nguy cơ các bệnh về tim mạch',
+    title: "Hỗ Trợ Tim Mạch",
+    description: "Cải thiện tuần hoàn máu, giảm nguy cơ các bệnh về tim mạch",
   },
   {
     icon: Sparkles,
-    title: 'Chống Lão Hóa',
-    description: 'Chống oxy hóa mạnh mẽ, giúp làm chậm quá trình lão hóa tế bào',
+    title: "Chống Lão Hóa",
+    description:
+      "Chống oxy hóa mạnh mẽ, giúp làm chậm quá trình lão hóa tế bào",
   },
   {
     icon: Activity,
-    title: 'Giảm Cholesterol',
-    description: 'Hỗ trợ giảm cholesterol xấu, cân bằng mỡ máu tự nhiên',
+    title: "Giảm Cholesterol",
+    description: "Hỗ trợ giảm cholesterol xấu, cân bằng mỡ máu tự nhiên",
   },
 ];
 
 export function BenefitsSection() {
   return (
-    <section className="py-20 lg:py-32 bg-gradient-to-b from-white to-[#faf9f7]">
+    <section
+      id="benefits"
+      className="scroll-mt-24 py-14 lg:py-20 bg-gradient-to-b from-white to-[#faf9f7]"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
@@ -43,7 +48,8 @@ export function BenefitsSection() {
             Vì Sao Chọn Tỏi Đen SuZin?
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Khám phá những lợi ích tuyệt vời mà tỏi đen mang lại cho sức khỏe của bạn
+            Khám phá những lợi ích tuyệt vời mà tỏi đen mang lại cho sức khỏe
+            của bạn
           </p>
         </motion.div>
 
@@ -70,9 +76,7 @@ export function BenefitsSection() {
                 </div>
 
                 {/* Content */}
-                <h3 className="text-2xl text-gray-900 mb-3">
-                  {benefit.title}
-                </h3>
+                <h3 className="text-2xl text-gray-900 mb-3">{benefit.title}</h3>
                 <p className="text-gray-600 leading-relaxed">
                   {benefit.description}
                 </p>

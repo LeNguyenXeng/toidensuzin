@@ -3,7 +3,7 @@ import { ChevronRight } from 'lucide-react';
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-black via-[#1a1410] to-black">
+    <section id="hero" className="scroll-mt-24 relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-black via-[#1a1410] to-black">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -26,7 +26,7 @@ export function HeroSection() {
         >
           {/* Logo/Brand */}
           <div className="mb-6">
-            <span className="inline-block px-6 py-2 bg-[#D4AF37]/10 border border-[#D4AF37]/30 rounded-full text-[#D4AF37] tracking-widest">
+            <span className="hidden sm:inline-block px-6 py-2 bg-[#D4AF37]/10 border border-[#D4AF37]/30 rounded-full text-[#D4AF37] tracking-widest">
               SuZin Premium
             </span>
           </div>
@@ -46,22 +46,24 @@ export function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <motion.button
+            <motion.a
+              href="#products"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="group px-8 py-4 bg-gradient-to-r from-[#D4AF37] to-[#C9A961] text-black rounded-full flex items-center gap-2 shadow-lg shadow-[#D4AF37]/20 transition-all hover:shadow-xl hover:shadow-[#D4AF37]/30"
             >
               <span className="tracking-wide">Mua Ngay</span>
               <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </motion.button>
+            </motion.a>
 
-            <motion.button
+            <motion.a
+              href="#products"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-full tracking-wide transition-all hover:bg-white/10"
             >
               Khám Phá Ngay
-            </motion.button>
+            </motion.a>
           </div>
         </motion.div>
 

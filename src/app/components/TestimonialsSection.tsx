@@ -30,7 +30,7 @@ const testimonials = [
 
 export function TestimonialsSection() {
   return (
-    <section className="py-20 lg:py-32 bg-gradient-to-b from-white to-[#faf9f7] relative overflow-hidden">
+    <section id="testimonials" className="scroll-mt-24 py-14 lg:py-20 bg-gradient-to-b from-white to-[#faf9f7] relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 text-[#D4AF37] text-9xl">❝</div>
@@ -119,17 +119,19 @@ export function TestimonialsSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-16 text-center"
         >
-          <div className="inline-flex items-center gap-8 px-8 py-4 bg-gradient-to-r from-[#D4AF37]/10 to-[#8B7355]/10 rounded-full border border-[#D4AF37]/20">
+          <div className="mx-auto flex w-full max-w-xl flex-col items-center gap-4 rounded-2xl border border-[#D4AF37]/20 bg-gradient-to-r from-[#D4AF37]/10 to-[#8B7355]/10 px-5 py-5 sm:max-w-none sm:inline-flex sm:w-auto sm:flex-row sm:gap-8 sm:rounded-full sm:px-8 sm:py-4">
             <div className="text-center">
               <div className="text-3xl text-[#D4AF37] mb-1">5,000+</div>
               <div className="text-sm text-gray-600">Khách hàng hài lòng</div>
             </div>
-            <div className="w-px h-12 bg-[#D4AF37]/30"></div>
+            <div className="h-px w-20 bg-[#D4AF37]/30 sm:hidden"></div>
+            <div className="hidden h-12 w-px bg-[#D4AF37]/30 sm:block"></div>
             <div className="text-center">
               <div className="text-3xl text-[#D4AF37] mb-1">4.9★</div>
               <div className="text-sm text-gray-600">Đánh giá trung bình</div>
             </div>
-            <div className="w-px h-12 bg-[#D4AF37]/30"></div>
+            <div className="h-px w-20 bg-[#D4AF37]/30 sm:hidden"></div>
+            <div className="hidden h-12 w-px bg-[#D4AF37]/30 sm:block"></div>
             <div className="text-center">
               <div className="text-3xl text-[#D4AF37] mb-1">98%</div>
               <div className="text-sm text-gray-600">Tỷ lệ quay lại</div>
