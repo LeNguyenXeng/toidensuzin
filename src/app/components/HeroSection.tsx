@@ -1,9 +1,12 @@
-import { motion } from 'motion/react';
-import { ChevronRight } from 'lucide-react';
+import { motion } from "motion/react";
+import { ChevronRight } from "lucide-react";
 
 export function HeroSection() {
   return (
-    <section id="hero" className="scroll-mt-24 relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-black via-[#1a1410] to-black">
+    <section
+      id="hero"
+      className="scroll-mt-24 relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-black via-[#1a1410] to-black"
+    >
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -24,13 +27,6 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          {/* Logo/Brand */}
-          <div className="mb-6">
-            <span className="hidden sm:inline-block px-6 py-2 bg-[#D4AF37]/10 border border-[#D4AF37]/30 rounded-full text-[#D4AF37] tracking-widest">
-              SuZin Premium
-            </span>
-          </div>
-
           {/* Main Headline */}
           <h1 className="text-5xl sm:text-6xl lg:text-7xl mb-6 text-white tracking-tight">
             Tỏi Đen SuZin
@@ -41,7 +37,8 @@ export function HeroSection() {
 
           {/* Subheadline */}
           <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed">
-            Nâng cao đề kháng tự nhiên • Hỗ trợ tim mạch khỏe mạnh • Chống oxy hóa mạnh mẽ
+            Nâng cao đề kháng tự nhiên • Hỗ trợ tim mạch khỏe mạnh • Chống oxy
+            hóa mạnh mẽ
           </p>
 
           {/* CTA Buttons */}
@@ -68,20 +65,22 @@ export function HeroSection() {
         </motion.div>
 
         {/* Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 1 }}
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-        >
+        <div className="mt-10">
           <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ repeat: Infinity, duration: 2 }}
-            className="w-6 h-10 border-2 border-[#D4AF37] rounded-full flex items-start justify-center p-2"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1, duration: 1 }}
+            className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
           >
-            <div className="w-1 h-2 bg-[#D4AF37] rounded-full"></div>
+            <motion.div
+              animate={{ y: [0, 10, 0] }}
+              transition={{ repeat: Infinity, duration: 2 }}
+              className="w-6 h-10 border-2 border-[#D4AF37] rounded-full flex items-start justify-center p-2"
+            >
+              <div className="w-1 h-2 bg-[#D4AF37] rounded-full"></div>
+            </motion.div>
           </motion.div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
