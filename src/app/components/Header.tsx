@@ -17,7 +17,7 @@ export function Header() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#0a0a0a]">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <a href="#hero" className="text-[#D4AF37] tracking-widest">
-          SuZin Premium
+          Tỏi đen SuZin
         </a>
 
         <nav aria-label="Điều hướng chính" className="hidden gap-6 md:flex">
