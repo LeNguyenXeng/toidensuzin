@@ -13,6 +13,8 @@ export function HeroSection() {
           src="https://images.unsplash.com/photo-1544858696-b911703da78f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxibGFjayUyMGdhcmxpYyUyMGJ1bGIlMjBzdHVkaW8lMjBsaWdodGluZyUyMGx1eHVyeXxlbnwxfHx8fDE3NzUzOTI2NjV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
           alt="Tỏi đen cao cấp"
           className="w-full h-full object-cover opacity-40"
+          fetchPriority="high"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
       </div>

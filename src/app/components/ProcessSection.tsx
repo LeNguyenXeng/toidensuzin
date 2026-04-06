@@ -71,6 +71,8 @@ export function ProcessSection() {
                 src={toidenImage}
                 alt="Quy trình lên men"
                 className="w-full h-[500px] object-cover"
+                loading="lazy"
+                decoding="async"
               />
 
               {/* Badge */}

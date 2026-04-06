@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: 'Nguyễn Minh Anh',
     age: '35 tuổi',
-    avatar: 'https://images.unsplash.com/photo-1569925444984-9e2e5fc3d1fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc2lhbiUyMHdvbWFuJTIwaGVhbHRoeSUyMHdlbGxuZXNzJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzc1MzkyNjY2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    avatar: 'https://images.unsplash.com/photo-1569925444984-9e2e5fc3d1fb?crop=entropy&cs=tinysrgb&fit=crop&fm=webp&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc2lhbiUyMHdvbWFuJTIwaGVhbHRoeSUyMHdlbGxuZXNzJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzc1MzkyNjY2fDA&ixlib=rb-4.1.0&q=80&w=112&h=112&utm_source=figma&utm_medium=referral',
     role: 'Nhân viên văn phòng',
     feedback: 'Sử dụng tỏi đen SuZin được 2 tháng, tôi cảm thấy sức khỏe tốt hơn hẳn. Không còn mệt mỏi và đề kháng được cải thiện rõ rệt.',
     rating: 5,
@@ -13,7 +13,7 @@ const testimonials = [
   {
     name: 'Trần Văn Nam',
     age: '42 tuổi',
-    avatar: 'https://images.unsplash.com/photo-1744579528653-7aa1180fa436?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc2lhbiUyMG1hbiUyMGZpdG5lc3MlMjBoZWFsdGglMjBwb3J0cmFpdHxlbnwxfHx8fDE3NzUzOTI2Njd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    avatar: 'https://images.unsplash.com/photo-1744579528653-7aa1180fa436?crop=entropy&cs=tinysrgb&fit=crop&fm=webp&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc2lhbiUyMG1hbiUyMGZpdG5lc3MlMjBoZWFsdGglMjBwb3J0cmFpdHxlbnwxfHx8fDE3NzUzOTI2Njd8MA&ixlib=rb-4.1.0&q=80&w=112&h=112&utm_source=figma&utm_medium=referral',
     role: 'Doanh nhân',
     feedback: 'Chất lượng tuyệt vời! Tỏi đen SuZin giúp tôi giảm cholesterol và cải thiện sức khỏe tim mạch. Rất đáng tin cậy.',
     rating: 5,
@@ -21,7 +21,7 @@ const testimonials = [
   {
     name: 'Lê Thị Hương',
     age: '58 tuổi',
-    avatar: 'https://images.unsplash.com/photo-1774094135149-bbeeb1767bfa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc2lhbiUyMGVsZGVybHklMjB3b21hbiUyMHNtaWxpbmclMjBoZWFsdGh8ZW58MXx8fHwxNzc1MzkyNjY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    avatar: 'https://images.unsplash.com/photo-1774094135149-bbeeb1767bfa?crop=entropy&cs=tinysrgb&fit=crop&fm=webp&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc2lhbiUyMGVsZGVybHklMjB3b21hbiUyMHNtaWxpbmclMjBoZWFsdGh8ZW58MXx8fHwxNzc1MzkyNjY3fDA&ixlib=rb-4.1.0&q=80&w=112&h=112&utm_source=figma&utm_medium=referral',
     role: 'Giáo viên nghỉ hưu',
     feedback: 'Sản phẩm rất tốt cho người cao tuổi như tôi. Dùng được 1 tháng, giấc ngủ sâu hơn và tinh thần thoải mái hơn nhiều.',
     rating: 5,
@@ -92,6 +92,10 @@ export function TestimonialsSection() {
                       src={testimonial.avatar}
                       alt={testimonial.name}
                       className="w-full h-full object-cover"
+                      loading="lazy"
+                      decoding="async"
+                      width={56}
+                      height={56}
                     />
                   </div>
                   <div>

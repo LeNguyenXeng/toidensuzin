@@ -2,14 +2,14 @@ import { motion } from "motion/react";
 import { ShoppingCart, Check } from "lucide-react";
 import toicodonImage from "../../images/toicodon.webp";
 import toidenVip from "../../images/toidenvip.webp";
-import combo from "../../images/combo.webp";
+import combo from "../../images/combo.png";
 
 const products = [
   {
     name: "Tỏi Đen cô đơn",
     image: toicodonImage,
     weight: "500g",
-    originalPrice: "399.000đ",
+    originalPrice: "400.000đ",
     price: "299.000đ",
     features: [
       "Tỏi đen lên men tự nhiên",
@@ -24,12 +24,12 @@ const products = [
     name: "Hộp Tỏi Đen SuZin Premium",
     image: toidenVip,
     weight: "500g",
-    originalPrice: "499.000đ",
+    originalPrice: "450.000đ",
     price: "399.000đ",
     features: [
       "Tỏi đen cao cấp chọn lọc",
       "Đóng gói hộp quà tặng sang trọng",
-      "Kèm sách hướng dẫn sử dụng",
+      "Đóng gói chân không",
       "Hạn sử dụng 24 tháng",
     ],
     badge: "Cao cấp nhất",
@@ -39,7 +39,7 @@ const products = [
     name: "Combo Gia Đình SuZin",
     image: combo,
     weight: "1kg",
-    originalPrice: "899.000đ",
+    originalPrice: "900.000đ",
     price: "699.000đ",
     features: [
       "2 hộp tỏi đen tiêu chuẩn",
@@ -108,6 +108,8 @@ export function ProductSection() {
                     src={product.image}
                     alt={product.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 
